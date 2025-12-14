@@ -11,10 +11,11 @@
       background: #2f1f1f;
       font-family: "Noto Serif TC", serif;
       color: #3b2f2f;
+      line-height: 1.9;
     }
     .wrapper {
       max-width: 760px;
-      margin: 60px auto;
+      margin: 40px auto;
       padding: 50px 30px;
       background: #fff8ef;
       border: 1px solid #cbb8a0;
@@ -35,6 +36,15 @@
       background: #b79b7a;
       margin: 30px auto;
     }
+    .section {
+      margin-top: 50px;
+    }
+    .section-title {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: #7a5a45;
+      margin-bottom: 10px;
+    }
     .names {
       font-size: 22px;
       font-weight: 600;
@@ -42,7 +52,19 @@
     }
     .info {
       font-size: 18px;
-      line-height: 1.8;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 28px;
+      border: 1px solid #b79b7a;
+      color: #3b2f2f;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+    a.button:hover {
+      background: #b79b7a;
+      color: #fff;
     }
   </style>
 </head>
@@ -50,18 +72,57 @@
 <body>
   <div class="wrapper">
     <div class="frame">
+
+      <!-- 封面 -->
       <h1>Wedding Invitation</h1>
       <div class="divider"></div>
       <div class="names">陳羿安 & 梁雅琪</div>
       <div class="info">
         <p>2026 年 03 月 21 日（星期六）</p>
         <p>18:00 – 21:00</p>
+      </div>
+
+      <!-- 地點 -->
+      <div class="section">
+        <div class="divider"></div>
+        <div class="section-title">VENUE</div>
         <p><strong>皇潮鼎宴</strong></p>
         <p>510 彰化縣員林市員林大道一段 298 號</p>
       </div>
-      <div class="divider"></div>
-      <p>誠摯邀請您蒞臨<br>與我們一同分享幸福時刻</p>
-      <p style="margin-top:40px;">陳羿安 & 梁雅琪 敬邀</p>
+
+      <!-- 邀請詞 -->
+      <div class="section">
+        <div class="divider"></div>
+        <p>
+          我們誠摯邀請您<br>
+          蒞臨與我們一同分享這份幸福
+        </p>
+      </div>
+
+      <!-- 流程 -->
+      <div class="section">
+        <div class="divider"></div>
+        <div class="section-title">SCHEDULE</div>
+        <p>18:00 ｜ 賓客入席</p>
+        <p>18:30 ｜ 婚宴開始</p>
+        <p>21:00 ｜ 溫馨送客</p>
+      </div>
+
+      <!-- RSVP -->
+      <div class="section">
+        <div class="divider"></div>
+        <div class="section-title">RSVP</div>
+        <p>敬請回覆是否出席</p>
+        <a class="button" href="#" target="_blank">出席回覆</a>
+      </div>
+
+      <!-- 結尾 -->
+      <div class="section">
+        <div class="divider"></div>
+        <p>期待與您相見</p>
+        <p style="margin-top:30px;">陳羿安 & 梁雅琪 敬邀</p>
+      </div>
+
     </div>
   </div>
 </body>
